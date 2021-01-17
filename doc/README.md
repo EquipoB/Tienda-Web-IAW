@@ -1,5 +1,5 @@
 # Tienda-Web-IAW
-MAcacoNumero400
+
 El trabajo será realizado por Alejandro Palomo Sáez, Raúl García Fuentes, Daniel Aguilar Vera, Javier Mancera Agüera y Pepe Domenech Parra.
 El trabajo fue iniciado el día 17 de Enero de 2021.
 
