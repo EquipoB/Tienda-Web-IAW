@@ -1,23 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Buscar50</title>
+    <meta charset="UTF-8">
+    <title> Tienda v2.0 </title>
+    <link rel='stylesheet'> <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+<cabecera>
+    <div class="pattern">
+        <div class="container">
+            <div class="pattern-inner"> </div>
+        </div>
+    </div>
 
-<h1>Tienda Web V1.0</h1>
-<h2>Buscar un nuevo producto</h2>
-<form action="buscarproductos.php" method="post">
-    B&uacutequeda: <input type="text" maxlength="50" min="0" name="busq"><br>
-    Elija par&aacutemetro por el que buscar:
-    <input type="radio" name="radio" value="codigo" required>C&oacutedigo
-    <input type="radio" name="radio" value="descripcion" required>Descripci&oacuten
-    <input type="radio" name="radio" value="precio" required>Precio
-    <br>
-    <br>
-    <input type="reset" name="restablecer">
-    <input type="submit">
-</form>
+    <div class="container">
+        <h1>
+            <span> Tienda v2.0 - Equipo B.</span>
+        </h1>
+    </div>
+</cabecera>
 
+<principal>
+    <div class="content">
+        <h2> Buscar producto: </h2>
+        <form action="buscarproducto.php" method="post">
+            <p> Busqueda: <input type="text" name="articulos"/> </p>
+            Por codigo: <input type="radio" id="codigo" name="articulos" value="codigo"> <br>
+            Por descripción: <input type="radio" id="descripcion" name="articulos" value="descripcion"> <br>
+            Por precio:  <input type="radio" id="precio" name="articulos" value="precio"> <br>
+            Por stock:  <input type="radio" id="stock" name="articulos" value="stock"> <br>
+            <p> <input type="submit"/> </p>
+        </form>
+    </div>
+</principal>
+
+<button onclick="location.href='index.html'"> Ir a Inicio.</button>
 </body>
 </html>
