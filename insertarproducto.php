@@ -43,3 +43,5 @@ if (is_numeric($codigo) and is_numeric($precio) and is_string($descripcion)) {
 }
 ?>
 
+cambios
+

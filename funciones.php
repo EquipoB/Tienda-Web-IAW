@@ -6,3 +6,4 @@ function chgvar ($variable) {
     return $variable;
 
 }
+cambios

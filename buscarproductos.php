@@ -37,3 +37,5 @@ if (is_string($parametro) and is_string($busqueda)) {
     mysqli_close($conn);
 }
 ?>
+
+cambios
