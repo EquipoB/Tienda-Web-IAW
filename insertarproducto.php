@@ -9,9 +9,9 @@ echo "<p>El producto insertado tiene el código " .$codigo. " , la descripci&oac
 
 
 
-$servername = "192.168.158.130";
-$username = "php";
-$password = "1234";
+$servername = "192.168.31.53";
+$username = "equipob";
+$password = "Equipob.1";
 $dbname = "pruebas";
 
 include 'funciones.php';

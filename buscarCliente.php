@@ -4,9 +4,9 @@ $busqueda = $_POST["busqueda"];
 
 echo "<p>Se ha buscado en la web " .$busqueda. " con el par&aacutemetro de b&uacutesqueda " .$parametro. "</p>";
 
-$servername = "192.168.158.130";
-$username = "php";
-$password = "1234";
+$servername = "192.168.31.53";
+$username = "equipob";
+$password = "Equipob.1";
 $dbname = "pruebas";
 
 if (is_string($parametro) and is_string($busqueda)) {
@@ -24,7 +24,7 @@ if (is_string($parametro) and is_string($busqueda)) {
 
         while ($row = mysqli_fetch_assoc($resultado)) {
             echo " - Nombre : " . $row["nombre"] . " - Apellidos: " . $row["apellidos"] . " - DNI: " . $row["dni"] .
-                 " - Email: " . $row["email"] . " - Fecha de nacimiento: " . $row["fecha_nacimiento"] .
+                 " - Email: " . $row["email"] . " - Fecha de nacimiento: " . $row["fecha_de_nacimiento"] .
                  "<br>";
         }
     } else {

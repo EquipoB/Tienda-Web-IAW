@@ -9,10 +9,10 @@ $fecha = $_POST["fecha"];
 echo "<p>El nombre es " .$nombre. " , los apellidos son " .$apellidos. " , el DNI es " .$dni. " , el email es " . $email . " y la fecha de nacimiento es " . $fecha . "</p>";
 
 
-$servername = "192.168.158.130";
-$username = "php";
-$password = "1234";
-$dbname = "pruebas";
+$servername = "192.168.31.53";
+$username = "equipob";
+$password = "Equipob.1";
+$dbname = "pruebas";;
 
     $nombre = "'" .$nombre. "'";
     $apellidos = "'" .$apellidos. "'";

@@ -6,9 +6,9 @@ $busqueda = $_POST["busq"];
 echo "<p>Se ha buscado en la web " .$busqueda. " con el par&aacutemetro de b&uacutesqueda " .$parametro. "</p>";
 
 
-$servername = "192.168.158.130";
-$username = "php";
-$password = "1234";
+$servername = "192.168.31.53";
+$username = "equipob";
+$password = "Equipob.1";
 $dbname = "pruebas";
 
 if (is_string($parametro) and is_string($busqueda)) {
@@ -20,14 +20,14 @@ if (is_string($parametro) and is_string($busqueda)) {
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $sentencia = "SELECT * FROM productos WHERE " . $parametro . " LIKE '%" .$busqueda. "%'";
+    $sentencia = "SELECT * FROM productos WHERE " . $parametro . " LIKE '%$busqueda%'";
     $resultado = mysqli_query($conn, $sentencia);
 
 
     if (mysqli_num_rows($resultado) > 0) {
 
         while ($row = mysqli_fetch_assoc($resultado)) {
-            echo "Codigo : " . $row["cod"] . " - Descripcion: " . $row["descripcion"] . " - Precio : " . $row["precio"] . " - Stock : " . $row["stock"] . "<br>";
+            echo "Codigo : " . $row["CodProducto"] . " - Descripcion: " . $row["Descripcion"] . " - Precio : " . $row["Precio"] . " - Stock : " . $row["Stock"] . "<br>";
         }
     } else {
         echo "0 resultados";
