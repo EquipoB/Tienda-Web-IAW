@@ -27,7 +27,7 @@ if (is_string($parametro) and is_string($busqueda)) {
     if (mysqli_num_rows($resultado) > 0) {
 
         while ($row = mysqli_fetch_assoc($resultado)) {
-            echo "Codigo : " . $row["cod"] . " - Descripcion: " . $row["descripcion"] . " - Precio : " . $row["precio"] . "<br>";
+            echo "Codigo : " . $row["cod"] . " - Descripcion: " . $row["descripcion"] . " - Precio : " . $row["precio"] . " - Stock : " . $row["stock"] . "<br>";
         }
     } else {
         echo "0 resultados";
@@ -38,4 +38,4 @@ if (is_string($parametro) and is_string($busqueda)) {
 }
 ?>
 
-cambios
+

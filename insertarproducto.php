@@ -3,8 +3,9 @@
 $codigo = $_POST["cod"];
 $descripcion = $_POST["desc"];
 $precio = $_POST["prec"];
+$stock = $_POST["stock"];
 
-echo "<p>El producto insertado tiene el código " .$codigo. " , la descripci&oacuten " .$descripcion. " y el precio " .$precio. "</p>";
+echo "<p>El producto insertado tiene el código " .$codigo. " , la descripci&oacuten " .$descripcion. " y el precio " .$precio. " y el stock es " .$stock. "</p>";
 
 
 
@@ -20,6 +21,7 @@ if (is_numeric($codigo) and is_numeric($precio) and is_string($descripcion)) {
     $codigo = "'" .$codigo. "'";
     $descripcion = "'" .$descripcion. "'";
     $precio = "'" .$precio. "'";
+    $stock = "'" .$stock. "'";
 // Comprobamos la conexion con la base de datos
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     if (!$conn) {
@@ -43,5 +45,5 @@ if (is_numeric($codigo) and is_numeric($precio) and is_string($descripcion)) {
 }
 ?>
 
-cambios
+
 
