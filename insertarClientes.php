@@ -6,7 +6,7 @@ $dni = $_POST["dni"];
 $email = $_POST["email"];
 $fecha = $_POST["fecha"];
 
-echo "<p>El nombre es " .$nombre. " , los apellidos son " .$apellidos. " el dni es " .$dni. " el email " . $email . " y la fecha de nacimiento " . $fecha . "</p>";
+echo "<p>El nombre es " .$nombre. " , los apellidos son " .$apellidos. " , el DNI es " .$dni. " , el email es " . $email . " y la fecha de nacimiento es " . $fecha . "</p>";
 
 
 $servername = "192.168.158.130";
