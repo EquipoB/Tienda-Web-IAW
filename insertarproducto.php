@@ -28,7 +28,7 @@ if (is_numeric($codigo) and is_numeric($precio) and is_string($descripcion)) {
         die("Connection failed: " . mysqli_connect_error());
     }
 //Creamos la sentencia
-    $sentencia = "INSERT INTO productos VALUES ($codigo , $descripcion , $precio)";
+    $sentencia = "INSERT INTO productos VALUES ($codigo , $descripcion , $precio , $stock)";
 
 //Iniciamos la insercion de datos
     if (mysqli_query($conn, $sentencia)) {
@@ -43,6 +43,7 @@ if (is_numeric($codigo) and is_numeric($precio) and is_string($descripcion)) {
 
     mysqli_close($conn);
 }
+
 ?>
 
 
