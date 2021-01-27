@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Buscar</title>
+    <meta charset="UTF-8">
+    <title> Tienda v2.0 </title>
+    <link rel='stylesheet'> <link rel="stylesheet" href="./style.css">
 </head>
-<body>
 
+<body>
+<cabecera>
+    <div class="pattern">
+        <div class="container">
+            <div class="pattern-inner"> </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>
+            <span> Tienda v2.0 - Equipo B.</span>
+        </h1>
+    </div>
+</cabecera>
+
+<<<<<<< HEAD
 <h1>Tienda Web V1.0</h1>
 <h2>Buscar un nuevo producto</h2>
 <form action="buscarproductos.php" method="post">
@@ -19,6 +36,22 @@
     <input type="reset" name="restablecer">
     <input type="submit">
 </form>
+=======
+<principal>
+    <div class="content">
+        <h2> Buscar producto: </h2>
+        <form action="buscarproductos.php" method="post">
+            <p> Busqueda: <input type="text" name="busq"></p>
+            Por codigo: <input type="radio" id="codigo" name="radio" value="CodProducto"> <br>
+            Por descripción: <input type="radio" id="descripcion" name="radio" value="descripcion"> <br>
+            Por precio:  <input type="radio" id="precio" name="radio" value="precio"> <br>
+            Por stock:  <input type="radio" id="stock" name="radio" value="stock"> <br>
+            <p> <input type="submit"/> </p>
+        </form>
+    </div>
+</principal>
+>>>>>>> html
 
+<button onclick="location.href='index.html'"> Ir a Inicio.</button>
 </body>
 </html>

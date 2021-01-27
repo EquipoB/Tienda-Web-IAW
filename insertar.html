@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Insertar</title>
+    <meta charset="UTF-8">
+    <title> Tienda v2.0 </title>
+    <link rel='stylesheet'> <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+<<<<<<< HEAD
 <h1>Tienda Web V1.0</h1>
 <h2>A&ntildeadir un nuevo producto</h2>
 <form action="insertarproducto.php" method="post">
@@ -14,5 +18,34 @@
     <input type="reset" name="restablecer">
     <input type="submit">
 </form>
+=======
+<cabecera>
+    <div class="pattern">
+        <div class="container">
+            <div class="pattern-inner"> </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>
+            <span> Tienda v2.0 - Equipo B.</span>
+        </h1>
+    </div>
+</cabecera>
+
+<principal>
+    <div class="content">
+        <h2> Insertar producto: </h2>
+        <form action="insertarproducto.php" method="post">
+            <p> Codigo: <input type="number" name="cod"> </p>
+            <p> Descripcion: <input type="text" name="desc"></p>
+            <p> Precio: <input type="number" name="prec"> </p>
+	    <p> Stock: <input type="number" name="stock"></p>
+            <p> <input type="submit"/> </p>
+        </form>
+    </div>
+</principal>
+
+<button onclick="location.href='index.html'"> Ir a Inicio.</button>
+>>>>>>> html
 </body>
-</html>
