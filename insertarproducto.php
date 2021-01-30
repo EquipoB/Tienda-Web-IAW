@@ -14,8 +14,6 @@ $username = "equipob";
 $password = "Equipob.1";
 $dbname = "pruebas";
 
-include 'funciones.php';
-chgvar($precio);
 
 if (is_numeric($codigo) and is_numeric($precio) and is_string($descripcion)) {
     $codigo = "'" .$codigo. "'";
