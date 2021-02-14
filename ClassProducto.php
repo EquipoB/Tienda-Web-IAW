@@ -4,12 +4,14 @@ require 'vendor/autoload.php';
 class Producto {
 
     //Estado
+
     Private $Codigo;
     Private $Descripcion;
     Private $Precio;
     Private $Stock;
 
     //Comportamiento
+
     function __construct($Codigo,$Descripcion,$Precio,$Stock)
     {
         $this->Codigo = $Codigo;
