@@ -9,23 +9,20 @@ class Cliente {
     private $apellidos;
     private $fnac;
     private $email;
-    //Comportamiento
 
+    //Comportamiento
      function __construct($nombre,$apellidos,$dni,$email,$fnac) {
         $this->dni = $dni;
         $this->nombre = $nombre;
         $this->apellidos = $apellidos;
         $this->fnac = $fnac;
         $this->email = $email;
-
-
-        
     }
 
     //darse de alta
     function darAlta($conn) {
-        // Consulta para realizar inserción a la base de datos
 
+      // Consulta para realizar inserción a la base de datos
         $sql = "INSERT INTO clientes (nombre,apellidos,dni,email,fecha_de_nacimiento) VALUES ('".$this->nombre."','".$this->apellidos."','".$this->dni."','".$this->email."','".$this->fnac."');";
 
         if ($conn->query($sql) === TRUE) {
@@ -38,8 +35,6 @@ class Cliente {
           } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
           }
-
-
     }
 
     function asignarEmail($nuevoEmail) {
@@ -77,14 +72,11 @@ class Cliente {
       if ($resultado->num_rows > 0) {
         // Salida de datos por cada fila
         while($row = $resultado->fetch_assoc()) {
-          echo "- Nombre: ".$row["nombre"].", Apellidos: ".$row["apellidos"].", Email: ".$row["email"].", DNI: ".$row["dni"].", Fecha de nacimiento ".$row["fecha_de_nacimiento"]."<br>";
+          echo "- Nombre: ".$row["nombre"].", Apellidos: ".$row["apellidos"].", Email: ".$row["email"].", DNI: ".$row["dni"]."<br>";
         }
       }else{
         echo "No se han encontrado resultados.";
       }
     }
-
-
    }
-
 ?>

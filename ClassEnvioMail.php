@@ -1,17 +1,16 @@
 <?php
 
-
 //Import PHPMailer classes into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
 require 'vendor/autoload.php';
 
-class envioEmail { 
+class envioEmail {
     //private $mail;
     private $emailAddress;
-    //private $password;
 
+    //private $password;
     function __construct($email) {
         $this->emailAddress = $email;
     }
@@ -66,12 +65,12 @@ class envioEmail {
         //convert HTML into a basic plain-text alternative body
         //$mail->msgHTML(file_get_contents('contents.html'), __DIR__);
         $mail->msgHTML("<p>Este es el mensaje que leera el cliente...</p>", __DIR__);
+
         //Replace the plain text body with one created manually
         $mail->AltBody = 'This is a plain-text message body';
 
         //Attach an image file
         //$mail->addAttachment('images/phpmailer_mini.png');
-
         //send the message, check for errors
         if (!$mail->send()) {
             echo 'Mailer Error: ' . $mail->ErrorInfo;
@@ -84,7 +83,5 @@ class envioEmail {
             #}
         }
     }
-
 }
-
 ?>
