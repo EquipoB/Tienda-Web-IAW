@@ -9,10 +9,9 @@ class Cliente {
     private $apellidos;
     private $fnac;
     private $email;
-
     //Comportamiento
 
-    function __construct($nombre,$apellidos,$dni,$email,$fnac) {
+     function __construct($nombre,$apellidos,$dni,$email,$fnac) {
         $this->dni = $dni;
         $this->nombre = $nombre;
         $this->apellidos = $apellidos;
@@ -48,7 +47,7 @@ class Cliente {
     }
     
     //Buscar un/unos cliente/s dentro de la BBDD y mostrarlo por pantalla
-    function buscar($busqueda,$tipoBusqueda,$conn) {
+    public static function buscar($busqueda,$tipoBusqueda,$conn) {
 
         // Consulta para realizar la búsqueda en la base de datos
         $sql = "SELECT * FROM clientes WHERE ";

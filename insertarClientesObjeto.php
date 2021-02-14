@@ -13,11 +13,11 @@ $fape = $_POST["fape"];
 $fmail = $_POST["fmail"];
 $fdate = $_POST["fdate"];
 */
-$dni = "77112234M";
-$fnom = "Horumis";
+$dni = "76112274M";
+$fnom = "Horumos";
 $fape = "Clong Yoink";
 $fmail = "dp.pepe0402@gmail.com";
-$fdate = "1998-02-04";
+$fdate = "1998-02-05";
 
 
 // Establecer conexión con la base de datos
@@ -29,6 +29,7 @@ if ($conn->connect_error) {
 }
 
 //Creamos un objeto cliente y le pedimos el alta.
+
 
 $clienteNuevo = new Cliente($fnom,$fape,$dni,$fmail,$fdate);
 

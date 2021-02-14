@@ -1,6 +1,5 @@
 <?php
 require './ClassCliente.php';
-include './insertarClientesObjeto.php';
 
 // Variables
 $servername = "192.168.31.53";
@@ -19,12 +18,7 @@ if ($conn->connect_error) {
 }
 //Buscar el cliente
 
-$clienteNuevo = new Cliente($fnom,$fape,$dni,$fmail,$fdate);
-
-$clienteNuevo->buscar($busqueda,$tipoBusqueda,$conn);
-
-
-
+Cliente::buscar($busqueda,$tipoBusqueda,$conn);
 
 // Cerrar la conexion a la base de datos
 $conn->close();
