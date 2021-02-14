@@ -77,7 +77,7 @@ class Cliente {
       if ($resultado->num_rows > 0) {
         // Salida de datos por cada fila
         while($row = $resultado->fetch_assoc()) {
-          echo "- Nombre: ".$row["nombre"].", Apellidos: ".$row["apellidos"].", Email: ".$row["email"].", DNI: ".$row["dni"]."<br>";
+          echo "- Nombre: ".$row["nombre"].", Apellidos: ".$row["apellidos"].", Email: ".$row["email"].", DNI: ".$row["dni"].", Fecha de nacimiento ".$row["fecha_de_nacimiento"]."<br>";
         }
       }else{
         echo "No se han encontrado resultados.";
