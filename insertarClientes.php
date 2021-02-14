@@ -1,5 +1,4 @@
 <?php
-
 $nombre = $_POST["nombre"];
 $apellidos = $_POST["apellidos"];
 $dni = $_POST["dni"];
@@ -7,7 +6,6 @@ $email = $_POST["email"];
 $fecha = $_POST["fecha"];
 
 echo "<p>El nombre es " .$nombre. " , los apellidos son " .$apellidos. " , el DNI es " .$dni. " , el email es " . $email . " y la fecha de nacimiento es " . $fecha . "</p>";
-
 
 $servername = "192.168.31.53";
 $username = "equipob";
@@ -25,6 +23,7 @@ $dbname = "pruebas";;
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
+
 //Creamos la sentencia
     $sentencia = "INSERT INTO clientes VALUES ($nombre , $apellidos , $dni , $email , $fecha)";
 
@@ -38,6 +37,4 @@ $dbname = "pruebas";;
         echo "<br>";
         echo "<a href=index.html>Volver al índice</a>";
     }
-
-
 ?>

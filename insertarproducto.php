@@ -1,5 +1,4 @@
 <?php
-
 $codigo = $_POST["cod"];
 $descripcion = $_POST["desc"];
 $precio = $_POST["prec"];
@@ -7,13 +6,10 @@ $stock = $_POST["stock"];
 
 echo "<p>El producto insertado tiene el código " .$codigo. " , la descripci&oacuten " .$descripcion. " y el precio " .$precio. " y el stock es " .$stock. "</p>";
 
-
-
 $servername = "192.168.31.53";
 $username = "equipob";
 $password = "Equipob.1";
 $dbname = "pruebas";
-
 
 if (is_numeric($codigo) and is_numeric($precio) and is_string($descripcion)) {
     $codigo = "'" .$codigo. "'";
@@ -38,11 +34,6 @@ if (is_numeric($codigo) and is_numeric($precio) and is_string($descripcion)) {
         echo "<br>";
         echo "<a href=index.html>Volver al índice</a>";
     }
-
     mysqli_close($conn);
 }
-
 ?>
-
-
-

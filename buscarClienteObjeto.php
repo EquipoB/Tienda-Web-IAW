@@ -17,11 +17,8 @@ if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
 }
 //Buscar el cliente
-
 Cliente::buscar($busqueda,$tipoBusqueda,$conn);
 
 // Cerrar la conexion a la base de datos
 $conn->close();
-
-
 ?>

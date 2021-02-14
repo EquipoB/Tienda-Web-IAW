@@ -2,7 +2,7 @@
 $parametro = $_POST["param"];
 $busqueda = $_POST["busqueda"];
 
-echo "<p>Se ha buscado en la web " .$busqueda. " con el par&aacutemetro de b&uacutesqueda " .$parametro. "</p>";
+echo "<p>Se ha buscado en la web: " .$busqueda. " con el parametro de busqueda: " .$parametro. "</p>";
 
 $servername = "192.168.31.53";
 $username = "equipob";

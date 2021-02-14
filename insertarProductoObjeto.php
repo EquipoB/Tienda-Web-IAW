@@ -1,5 +1,4 @@
 <?php
-
 require './ClassProducto.php';
 
 // Variables 
@@ -7,10 +6,10 @@ $servername = "192.168.31.53";
 $username = "equipob";
 $password = "Equipob.1";
 $dbname = "pruebas";
-$CodProducto = $_POST["cod"];
-$Descripcion = $_POST["desc"];
-$Precio = $_POST["prec"];
-$Stock = $_POST["stock"];
+$CodProducto = $_POST["CodProducto"];
+$Descripcion = $_POST["Descripcion"];
+$Precio = $_POST["Precio"];
+$Stock = $_POST["Stock"];
 
 echo "<p>El producto insertado tiene el código " .$CodProducto. " , la descripci&oacuten " .$Descripcion. " y el Precio " .$Precio. " y el Stock es " .$Stock. "</p>";
 
@@ -23,7 +22,6 @@ if ($conn->connect_error) {
 }
 
 //Creamos un objeto cliente y le pedimos el alta.
-
 $productoNuevo = new Producto($CodProducto,$Descripcion,$Precio,$Stock);
 
 $productoNuevo->insertarproducto($conn);
