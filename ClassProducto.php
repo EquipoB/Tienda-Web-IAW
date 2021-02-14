@@ -62,7 +62,7 @@ class Producto {
         if ($resultado->num_rows > 0) {
             // Salida de datos por cada fila
             while($row = $resultado->fetch_assoc()) {
-                echo "- Nombre: ".$row["CodProducto"].", Apellidos: ".$row["Descripcion"].", Email: ".$row["Precio"].", DNI: ".$row["Stock"]."<br>";
+                echo "- Codigo: ".$row["CodProducto"].", Descripcion: ".$row["Descripcion"].", Precio: ".$row["Precio"].", Stock: ".$row["Stock"]."<br>";
             }
         }else{
             echo "No se han encontrado resultados.";
