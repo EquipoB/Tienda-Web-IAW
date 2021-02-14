@@ -12,7 +12,7 @@ class Cliente {
 
     //Comportamiento
 
-    function __construct($dni,$nombre,$apellidos,$fnac,$email) {
+    function __construct($nombre,$apellidos,$dni,$email,$fnac) {
         $this->dni = $dni;
         $this->nombre = $nombre;
         $this->apellidos = $apellidos;
@@ -27,7 +27,7 @@ class Cliente {
     function darAlta($conn) {
         // Consulta para realizar inserción a la base de datos
 
-        $sql = "INSERT INTO Clientes (dni,nombre,apellidos,fnac,email) VALUES ('".$this->dni."','".$this->nombre."','".$this->apellidos."','".$this->fnac."','".$this->email."');";
+        $sql = "INSERT INTO clientes (nombre,apellidos,dni,email,fecha_nacimiento) VALUES ('".$this->nombre."','".$this->apellidos."','".$this->dni."','".$this->email."','".$this->fnac."');";
 
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
