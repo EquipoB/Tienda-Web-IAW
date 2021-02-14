@@ -1,16 +1,17 @@
 <?php
-require './ClassCliente.php';
+require './ClassProducto.php';
 
 // Variables 
 $servername = "192.168.31.53";
 $username = "equipob";
 $password = "Equipob.1";
 $dbname = "pruebas";
-$dni = $_POST["dni"];
-$fnom = $_POST["nombre"];
-$fape = $_POST["apellidos"];
-$fmail = $_POST["email"];
-$fdate = $_POST["fecha"];
+$CodProducto = $_POST["CodProducto"];
+$Descripcion = $_POST["Descripcion"];
+$Precio = $_POST["Precio"];
+$Stock = $_POST["Stock"];
+
+echo "<p>El producto insertado tiene el código " .$CodProducto. " , la descripci&oacuten " .$Descripcion. " y el Precio " .$Precio. " y el Stock es " .$Stock. "</p>";
 
 // Establecer conexión con la base de datos
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -21,9 +22,9 @@ if ($conn->connect_error) {
 }
 
 //Creamos un objeto cliente y le pedimos el alta.
-$clienteNuevo = new Cliente($fnom,$fape,$dni,$fmail,$fdate);
+$productoNuevo = new Producto($CodProducto,$Descripcion,$Precio,$Stock);
 
-$clienteNuevo->darAlta($conn);
+$productoNuevo->insertarproducto($conn);
 
 // Cerrar la conexion a la base de datos
 $conn->close();
