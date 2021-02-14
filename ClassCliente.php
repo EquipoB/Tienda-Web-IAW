@@ -27,7 +27,7 @@ class Cliente {
     function darAlta($conn) {
         // Consulta para realizar inserción a la base de datos
 
-        $sql = "INSERT INTO clientes (nombre,apellidos,dni,email,fecha_nacimiento) VALUES ('".$this->nombre."','".$this->apellidos."','".$this->dni."','".$this->email."','".$this->fnac."');";
+        $sql = "INSERT INTO clientes (nombre,apellidos,dni,email,fecha_de_nacimiento) VALUES ('".$this->nombre."','".$this->apellidos."','".$this->dni."','".$this->email."','".$this->fnac."');";
 
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
@@ -51,19 +51,22 @@ class Cliente {
     function buscar($busqueda,$tipoBusqueda,$conn) {
 
         // Consulta para realizar la búsqueda en la base de datos
-        $sql = "SELECT * FROM Clientes WHERE ";
+        $sql = "SELECT * FROM clientes WHERE ";
         switch ($tipoBusqueda){
-        case "onom":
+        case "nombre":
           $sql = $sql."nombre like '%$busqueda%';";
         break;
-        case "oape":
+        case "apellidos":
           $sql = $sql."apellidos like '%$busqueda%';";
         break;
-        case "omail":
+        case "email":
           $sql = $sql."email like '%$busqueda%';";
         break;
-        case "odni":
+        case "dni":
           $sql = $sql."dni like '%$busqueda%';";
+        break;
+        case "fecha_nacimiento":
+            $sql = $sql."fecha_de_nacimiento like '%$busqueda%';";
         break;
         default:
           echo "Se ha producido un error durante la búsqueda.";
