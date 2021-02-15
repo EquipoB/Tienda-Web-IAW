@@ -15,3 +15,10 @@ Hoy 27/01/2021 hemos trabajado Alex y Pepe en PHP, lo primero que hicimos fue cr
 
 Hoy Día 24/01/2021 hemos trabajado Javi y Raúl sobre la base de HTML de Alex, hemos creado una rama HTML donde se han modificado los ficheros para que se comuniquen con php.
 Mario se unió al grupo de discord y se le explico por encima el proceso que estabamos realizando, ya que estaba algo perdido y quería ponerse al día.
+
+Hoy 13/02/2021 hemos estado "aprendiendo" como funcionaba la clase objeto, y se ha experimentado con los ficheros insertarClienteObjeto, insertarProductoObjeto, claseClienteObjeto y claseProductoObjeto.
+
+Hoy 14/02/2021 se ha trabajado por equipos, Pepe Domenech Parra nos ha explicado el funcionamiento de ClaseObjeto, y ha creado claseProductoObjeto, ademas de pulir los diferentes PHP y ayudarnos a enterlo mejor. 
+Javier Mancera Agüera y Raúl García Fuentes se han dedicado a crear BuscarClienteObjeto y editar diferentes HTML. 
+Daniel Aguilar Vera y Alejandro Palomo Sáez crearon InsertarProductoObjeto, ademas de organizar y adecuar los diferentes HTML y PHP del Proyecto.
+A rasgos generales, podemos decir que todos tocamos un poco de todo. 
