@@ -67,15 +67,22 @@ class Cliente {
       }
 
       $resultado = $conn->query($sql);
+        $usuarios = array();
+        $contador = 0;
 
       // Consulta para realizar la busqueda en la base de datos
       if ($resultado->num_rows > 0) {
         // Salida de datos por cada fila
         while($row = $resultado->fetch_assoc()) {
-          echo "- Nombre: ".$row["nombre"].", Apellidos: ".$row["apellidos"].", Email: ".$row["email"].", DNI: ".$row["dni"]."<br>";
+          $usuarios[$contador] = "- Nombre: ".$row["nombre"].", Apellidos: ".$row["apellidos"].", Email: ".$row["email"].", DNI: ".$row["dni"].", Fecha de nacimiento ".$row["fecha_de_nacimiento"]." <br>";
+          $contador++;
         }
+
+        return $usuarios;
+
       }else{
         echo "No se han encontrado resultados.";
+        return $usuarios;
       }
     }
    }

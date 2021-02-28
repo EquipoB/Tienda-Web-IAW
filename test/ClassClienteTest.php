@@ -1,9 +1,9 @@
 <?php
 
-//require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\vendor\autoload.php';
-//require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\ClassCliente.php';
-require '/home/garciafuentes/Tienda-Web-IAW/vendor/autoload.php';
-require '/home/garciafuentes/Tienda-Web-IAW/ClassCliente.php';
+require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\vendor\autoload.php';
+require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\ClassCliente.php';
+//require '/home/garciafuentes/Tienda-Web-IAW/vendor/autoload.php';
+//require '/home/garciafuentes/Tienda-Web-IAW/ClassCliente.php';
 
 class ClienteTest extends \PHPUnit\Framework\TestCase
 {
@@ -89,16 +89,18 @@ class ClienteTest extends \PHPUnit\Framework\TestCase
 
         $buscarcliente = Cliente::buscar("buscar", "dni",$conn);
 
+
         $this->assertEquals(1, count($buscarcliente), "Se ha encontrado el cliente correctamente");
 
         //Segundo test
 
-        $buscarcliente = Cliente::buscar("buscar", "nombre",$conn);
+        $buscarcliente = Cliente::buscar("ajfkkabfkf", "nombre",$conn);
 
-        $this->assertEquals(1, count($buscarcliente), "Se ha encontrado el cliente correctamente");
+        $this->assertEquals(0, count($buscarcliente), "Se ha comprobado que al buscar algo random efectivamente no encuentra nada");
 
         $conn->close();
 
 
     }
+
 }
