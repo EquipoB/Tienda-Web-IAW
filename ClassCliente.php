@@ -1,5 +1,5 @@
 <?php
-require './ClassEnvioMail.php';
+require 'ClassEnvioMail.php';
 require 'vendor/autoload.php';
 
 class Cliente {

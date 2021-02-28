@@ -1,7 +1,7 @@
 <?php
 
-require 'vendor/autoload.php';
-require 'ClassCliente.php';
+require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\vendor\autoload.php';
+require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\ClassCliente.php';
 
 class ClienteTest extends \PHPUnit\Framework\TestCase{
     
@@ -25,7 +25,7 @@ class ClienteTest extends \PHPUnit\Framework\TestCase{
 
         //Primero calculo cuantas lineas hay en la tabla
 
-        $sqlPrueba = "select * from Clientes;";
+        $sqlPrueba = "select * from clientes;";
         $resultado = $conn->query($sqlPrueba);
 
         // Consulta para realizar la busqueda en la base de datos
@@ -33,20 +33,22 @@ class ClienteTest extends \PHPUnit\Framework\TestCase{
           
 
 
-        $clienteNuevo = new Cliente("prueba","prueba","prueba","prueba","micorreo@gmail.com");
+        $clienteNuevo = new Cliente("prueba","prueba","prueba","prueba","1998-04-04");
 
         $clienteNuevo->darAlta($conn);
 
         $resultado = $conn->query($sqlPrueba);
 
         // Consulta para realizar la busqueda en la base de datos
+
         $clientesDespues = $resultado->num_rows;
 
 
         $this->assertEquals($clientesAntes+1,$clientesDespues,"El cliente se da de alta correctamente");
 
         //Segunda tanda
-        $sqlPrueba = "select * from Clientes where dni like 'prueba';";
+
+        $sqlPrueba = "select * from clientes where dni like 'prueba';";
         $resultado = $conn->query($sqlPrueba);
 
         // Consulta para realizar la busqueda en la base de datos
