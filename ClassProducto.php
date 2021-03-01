@@ -57,15 +57,23 @@ class Producto {
         }
 
         $resultado = $conn->query($sql);
+        $productos = array();
+        $contador = 0;
 
         // Consulta para realizar la busqueda en la base de datos
         if ($resultado->num_rows > 0) {
             // Salida de datos por cada fila
             while($row = $resultado->fetch_assoc()) {
-                echo "- Codigo: ".$row["CodProducto"].", Descripcion: ".$row["Descripcion"].", Precio: ".$row["Precio"].", Stock: ".$row["Stock"]."<br>";
+
+                $productos[$contador] = "- Codigo: ".$row["CodProducto"].", Descripcion: ".$row["Descripcion"].", Precio: ".$row["Precio"].", Stock: ".$row["Stock"]."<br>";
+                $contador++;
+
             }
+            return $productos;
+
         }else{
             echo "No se han encontrado resultados.";
+            return $productos;
         }
     }
 }
