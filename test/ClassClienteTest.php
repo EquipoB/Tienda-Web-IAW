@@ -1,7 +1,11 @@
 <?php
 
+//Descomentar dependendiendo de donde este el archivo PHP
+//Windows
 require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\vendor\autoload.php';
 require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\ClassCliente.php';
+
+//Linux
 //require '/home/garciafuentes/Tienda-Web-IAW/vendor/autoload.php';
 //require '/home/garciafuentes/Tienda-Web-IAW/ClassCliente.php';
 
