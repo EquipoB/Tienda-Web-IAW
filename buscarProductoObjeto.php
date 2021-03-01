@@ -19,7 +19,12 @@ if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
 }
 //Buscar el cliente
-Producto::buscar($busqueda,$tipoBusqueda,$conn);
+$resultado = Producto::buscar($busqueda,$tipoBusqueda,$conn);
+$arrlength = count($resultado);
+
+for($x = 0; $x < $arrlength; $x++) {
+    echo $resultado[$x];
+    echo "<br>";
 
 // Cerrar la conexion a la base de datos
 $conn->close();
