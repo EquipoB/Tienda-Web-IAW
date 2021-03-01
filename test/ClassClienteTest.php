@@ -2,8 +2,8 @@
 
 //Descomentar dependendiendo de donde este el archivo PHP
 //Windows
-require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\vendor\autoload.php';
-require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\ClassCliente.php';
+require '..\vendor\autoload.php';
+require '..\ClassCliente.php';
 
 //Linux
 //require '/home/garciafuentes/Tienda-Web-IAW/vendor/autoload.php';
@@ -51,7 +51,7 @@ class ClienteTest extends \PHPUnit\Framework\TestCase
         $clientesDespues = $resultado->num_rows;
 
 
-        $this->assertEquals($clientesAntes + 1, $clientesDespues, "El cliente se da de alta correctamente");
+        $this->assertEquals($clientesAntes + 1, $clientesDespues, "<br>El cliente se da de alta correctamente<br>");
 
         //Segunda tanda
 

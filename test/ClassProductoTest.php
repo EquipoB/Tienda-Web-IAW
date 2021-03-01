@@ -14,7 +14,7 @@ class ProductoTest extends \PHPUnit\Framework\TestCase
 {
 
 
-    public function InsertarProductoTest()
+    public function testProductoInsertar()
     {
 
         $servername = "192.168.31.53";
@@ -86,7 +86,7 @@ class ProductoTest extends \PHPUnit\Framework\TestCase
         }
 
         //Aqui vamos a crear el producto e insertarlo
-        $productoNuevo = new Producto("9999", "buscar", "1234", "9999");
+        $productoNuevo = new Producto("9998", "buscar", "1234", "9999");
 
         $productoNuevo->insertarproducto($conn);
 

@@ -19,7 +19,7 @@ if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
 }
 //Buscar el cliente
-$resultado = Producto::buscar($busqueda,$tipoBusqueda,$conn);
+$resultado = Producto::buscarproductos($busqueda,$tipoBusqueda,$conn);
 $arrlength = count($resultado);
 
 for($x = 0; $x < $arrlength; $x++) {
