@@ -23,3 +23,7 @@ Pepe Domenech ha realizado la clase objeto y ha manipulado las clases además de
 Javier Mancera Agüera y Raúl García Fuentes se han dedicado a crear BuscarClienteObjeto y editar diferentes HTML. 
 Daniel Aguilar Vera y Alejandro Palomo Sáez crearon InsertarProductoObjeto, ademas de organizar y adecuar los diferentes HTML y PHP del Proyecto.
 A rasgos generales, podemos decir que todos tocamos un poco de todo. 
+
+Hoy 27/02/2021 nos hemos reunido todo el grupo para entender como funciona las clases test que ibamos a desarrollar.
+Hoy 28/02/2021 Dani y Alex crearon  los assertions de buscar  clienteTest, y Pepe ha adaptado todo a array para que el assertions funcione correctamente.
+Hoy 01/03/2021 Javi y Raul crearon claseProductoTest y sus assertions, y luego pepe se unió y nos pusimos a subsanar los errores que contenia el código.
