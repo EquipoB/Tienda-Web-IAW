@@ -25,6 +25,7 @@ $arrlength = count($resultado);
 for($x = 0; $x < $arrlength; $x++) {
     echo $resultado[$x];
     echo "<br>";
+}
 
 // Cerrar la conexion a la base de datos
 $conn->close();
