@@ -30,3 +30,5 @@ Hoy 28/02/2021 Dani y Alex crearon  los assertions de buscar  clienteTest, y Pep
 
 Hoy 01/03/2021 Javi y Raul crearon claseProductoTest y sus assertions, y luego pepe se unió y nos pusimos a subsanar los errores que contenia el código.
 Se ha testeado todo el código y los test de nuevo y  funcionan perfectamente.
+
+Como aclaración final, como equipo sabemos que ha habido amplia diferencia entre Pepe y los demás en el número de commits, la causa de que ya de por si haya muchísimos commits es que muchas veces hemos cambiado tonterías o que a veces al mergear o subir cambios, haya problemas de funcionamiento y haya que arreglarlo. La principal causa de que lso demás tengan tan pocos commits es que cuando hemos realizado archivos los hemos hecho entre más de una persona (quizás 3 en 1) y por eso sólo lo sube 1, luego todos con el PC de Pepe arreglamos, pulimos cosas y lo más importante, testeamos (tuvimos problemas a veces con la base de datos y tuvimos que usar la de Pepe local), por eso la diferencia de commits.
