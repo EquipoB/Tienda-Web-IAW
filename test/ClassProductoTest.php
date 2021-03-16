@@ -1,14 +1,8 @@
 <?php
 
-//Descomentar si es en Windows
 
-require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\vendor\autoload.php';
-require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\ClassProducto.php';
-
-//Descomentar si es en Linux
-
-//require '/home/javi/github/Tienda-Web-IAW/vendor/autoload.php';
-//require '/home/javi/github/Tienda-Web-IAW/ClassProducto.php';
+require './vendor/autoload.php';
+require 'ClassProducto.php';
 
 class ProductoTest extends \PHPUnit\Framework\TestCase
 {

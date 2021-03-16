@@ -1,13 +1,8 @@
 <?php
 
-//Descomentar dependendiendo de donde este el archivo PHP
-//Windows
-require '..\vendor\autoload.php';
-require '..\ClassCliente.php';
-
 //Linux
-//require '/home/garciafuentes/Tienda-Web-IAW/vendor/autoload.php';
-//require '/home/garciafuentes/Tienda-Web-IAW/ClassCliente.php';
+require './vendor/autoload.php';
+require 'ClassCliente.php';
 
 class ClienteTest extends \PHPUnit\Framework\TestCase
 {
