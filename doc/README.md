@@ -2,21 +2,17 @@ Tienda Online V3
 
 Cuentas
 -------
-
+- Equipo --> EquipoB
 - Pepe Domenech --> PepeDomenech
 - Javier Mancera --> mlgjavi
 - Alejandro Saéz --> Horumis
 - Raul García --> raul155
 - Daniel Aguilar --> darude33
 
-Equipo --> EquipoB
-
-
 17-01-2021
 ----------
 
 El trabajo será realizado por Alejandro Palomo Sáez, Raúl García Fuentes, Daniel Aguilar Vera, Javier Mancera Agüera y Pepe Domenech Parra.
-
 
 El reparto de tareas lo hemos hecho de la siguiente forma: 1,2,2. 
 
