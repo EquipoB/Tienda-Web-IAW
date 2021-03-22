@@ -1,5 +1,17 @@
 Tienda Online V3
 
+Cuentas
+-------
+
+Pepe Domenech --> PepeDomenech
+Javier Mancera --> mlgjavi
+Alejandro Saéz --> Horumis
+Raul García --> raul155
+Daniel Aguilar --> darude33
+
+Equipo --> EquipoB
+
+
 17-01-2021
 ----------
 
@@ -47,7 +59,7 @@ Se ha trabajado por equipos, Pepe Domenech Parra nos ha explicado el funcionamie
 - Pepe Domenech ha realizado la clase objeto y ha manipulado las clases además de supervisar un poco a sus compañeros y lo que han ido trabajando.
 - Javier Mancera Agüera y Raúl García Fuentes se han dedicado a crear BuscarClienteObjeto y editar diferentes HTML. 
 - Daniel Aguilar Vera y Alejandro Palomo Sáez crearon InsertarProductoObjeto, ademas de organizar y adecuar los diferentes HTML y PHP del Proyecto.
-- 
+
 A rasgos generales, podemos decir que todos tocamos un poco de todo. 
 
 27-02-2021
