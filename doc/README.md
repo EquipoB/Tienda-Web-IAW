@@ -3,11 +3,11 @@ Tienda Online V3
 Cuentas
 -------
 
-Pepe Domenech --> PepeDomenech
-Javier Mancera --> mlgjavi
-Alejandro Saéz --> Horumis
-Raul García --> raul155
-Daniel Aguilar --> darude33
+- Pepe Domenech --> PepeDomenech
+- Javier Mancera --> mlgjavi
+- Alejandro Saéz --> Horumis
+- Raul García --> raul155
+- Daniel Aguilar --> darude33
 
 Equipo --> EquipoB
 
