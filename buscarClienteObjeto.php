@@ -26,6 +26,9 @@ for($x = 0; $x < $arrlength; $x++) {
     echo "<br>";
 }
 
+//se borra despues
+cliente::borrar($conn);
+
 
 // Cerrar la conexion a la base de datos
 $conn->close();

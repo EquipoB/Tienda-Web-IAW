@@ -85,5 +85,20 @@ class Cliente {
         return $usuarios;
       }
     }
+
+    //Vamos a hacer que el cliente se borre a si mismo
+    public static function borrar($conn){
+        // Consulta para realizar inserción a la base de datos
+        $sql = "DELETE FROM clientes WHERE nombre = $this->nombre;";
+
+        if ($conn->query($sql) === FALSE) {
+            echo "Se ha borrado correctamente";
+
+
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+            echo "Error en el borrado";
+        }
+    }
    }
 ?>
