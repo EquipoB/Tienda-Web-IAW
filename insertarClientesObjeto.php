@@ -2,9 +2,9 @@
 require './ClassCliente.php';
 
 // Variables 
-$servername = "192.168.31.53";
-$username = "equipob";
-$password = "Equipob.1";
+$servername = "localhost";
+$username = "php";
+$password = "1234";
 $dbname = "pruebas";
 $dni = $_POST["dni"];
 $fnom = $_POST["nombre"];
