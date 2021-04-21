@@ -76,3 +76,5 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-03-13 12:59:32
+DELETE FROM clientes;
+DELETE FROM productos;
