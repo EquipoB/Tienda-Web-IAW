@@ -2,13 +2,13 @@
 
 //Descomentar si es en Windows
 
-require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\vendor\autoload.php';
-require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\ClassProducto.php';
+//require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\vendor\autoload.php';
+//require 'D:\xampp\htdocs\Github\Tienda-Web-IAW\ClassProducto.php';
 
 //Descomentar si es en Linux
 
-//require '/home/javi/github/Tienda-Web-IAW/vendor/autoload.php';
-//require '/home/javi/github/Tienda-Web-IAW/ClassProducto.php';
+require '../vendor/autoload.php';
+require '../ClassProducto.php';
 
 class ProductoTest extends \PHPUnit\Framework\TestCase
 {
@@ -17,9 +17,9 @@ class ProductoTest extends \PHPUnit\Framework\TestCase
     public function testProductoInsertar()
     {
 
-        $servername = "192.168.31.53";
-        $username = "equipob";
-        $password = "Equipob.1";
+        $servername = "localhost:8008";
+        $username = "php";
+        $password = "1234";
         $dbname = "pruebas";
 
         // Establecer conexión con la base de datos
