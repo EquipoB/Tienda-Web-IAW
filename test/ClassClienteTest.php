@@ -16,9 +16,9 @@ class ClienteTest extends \PHPUnit\Framework\TestCase
     public function testDarAlta()
     {
 
-        $servername = "192.168.31.53";
-        $username = "equipob";
-        $password = "Equipob.1";
+        $servername = "localhost:8008";
+        $username = "php";
+        $password = "1234";
         $dbname = "pruebas";
 
         // Establecer conexión con la base de datos
