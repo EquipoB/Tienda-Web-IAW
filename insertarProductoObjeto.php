@@ -2,7 +2,7 @@
 require './ClassProducto.php';
 
 // Variables 
-$servername = "localhost";
+$servername = "localhost:8008";
 $username = "php";
 $password = "1234";
 $dbname = "pruebas";
