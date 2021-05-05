@@ -2,8 +2,8 @@
 
 //Descomentar dependendiendo de donde este el archivo PHP
 //Windows
-require 'vendor/autoload.php';
-require 'ClassCliente.php';
+require '../vendor/autoload.php';
+require '../ClassCliente.php';
 
 //Linux
 //require '/home/garciafuentes/Tienda-Web-IAW/vendor/autoload.php';
